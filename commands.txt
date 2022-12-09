@@ -1,0 +1,8 @@
+apt install apache2
+cd /var/www/html/
+rm index.html
+echo "<!DOCTYPE html><html><script>window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");</script></html>" > index.html
+cd /etc/apache2/
+sed -i 's/80/5000/g' ports.conf
+service apache2 restart
+echo "Done!"
