@@ -1,4 +1,4 @@
-apt install apache2
+apt install apache2 -y
 cd /var/www/html/
 rm index.html
 echo "<!DOCTYPE html><html><script>window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");</script></html>" > index.html
